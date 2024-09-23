@@ -28,7 +28,7 @@ input[type="text"], imput[type="email"], textarea{
     border: 5px solid slateblue;
     border-radius: 3px;
 }
-input[type=submit]{
+input[type="submit"]{
     background-color: plum;
     color:darkseagreen;
     border: none;
