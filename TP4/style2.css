@@ -55,6 +55,15 @@ body
    clear:both;
 }
 
+.box-inside-block {
+    background-color: #424242; /* Fond gris moyen pour la boîte */
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff; /* Texte blanc pour contraste */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Légère ombre */
+}
+
 footer{
    border-radius: 10px;
    background-color: rgba(206, 209, 233, 0.829);
