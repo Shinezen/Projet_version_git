@@ -1,4 +1,4 @@
-body {
+.body {
    background-color: rgba(88, 88, 82, 0.89);
    font-family: Arial, sans-serif;
    margin: 0;   
@@ -19,13 +19,7 @@ body {
    padding: 20px;
 }
 
-.box {
-  width: 30%;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.introduction{
+.introduction {
    border-radius: 10px;
    background-color:coral;
    height: 40px;
@@ -42,6 +36,8 @@ body {
    margin: 10px;
    float: left;
 
+}
+
 .introduction-bis{
    border-radius: 10px;
    margin: 10px;
@@ -52,16 +48,6 @@ body {
    
 }
 
-.p{
-   border-radius: 10px;
-   background-color:"#778899";
-   height: 420px;
-   width: 100%;
-   margin: 10px;
-   float: left;
-
-}
-
 .introduction-ter{
    border-radius: 10px;
    margin: 10px;
@@ -69,7 +55,6 @@ body {
    width: 100%;
    text-align: center;
    background-color: orangered;
-   clear:both;
 }
 
 .p{
@@ -82,7 +67,7 @@ body {
 
 }
    
-footer{
+.footer{
    border-radius: 10px;
    background-color: rgba(206, 209, 233, 0.829);
    text-align: center;
