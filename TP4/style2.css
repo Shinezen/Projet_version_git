@@ -28,33 +28,60 @@ body {
 .introduction{
    border-radius: 10px;
    background-color:coral;
-   float: left;
-   height: 300px;
-   width: 90%;
-   margin-left: 10px;
+   height: 40px;
+   width: 100%;
+   margin: 10px;
    text-align: center;
 }
 
+.p{
+   border-radius: 10px;
+   background-color:"#ffe4b5";
+   height: 420px;
+   width: 100%;
+   margin: 10px;
+   float: left;
+
 .introduction-bis{
    border-radius: 10px;
-   margin-left: 10px;
-   height: 300px;
-   width: 90%;
+   margin: 10px;
+   height: 40px;
+   width: 100%;
    text-align: center;
    background-color: darkseagreen;
-   float: right;
+   
+}
+
+.p{
+   border-radius: 10px;
+   background-color:"#778899";
+   height: 420px;
+   width: 100%;
+   margin: 10px;
+   float: left;
+
 }
 
 .introduction-ter{
    border-radius: 10px;
-   margin-left: 10px;
-   height: 300px;
-   width: 90%;
+   margin: 10px;
+   height: 40px;
+   width: 100%;
    text-align: center;
    background-color: orangered;
    clear:both;
 }
 
+.p{
+   border-radius: 10px;
+   background-color:"#dcdcdc";
+   height: 420px;
+   width: 100%;
+   margin: 10px;
+   float: left;
+
+}
+   
 footer{
    border-radius: 10px;
    background-color: rgba(206, 209, 233, 0.829);
