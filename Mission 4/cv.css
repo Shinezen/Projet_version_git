@@ -25,6 +25,12 @@ body
 .header {
     text-align: center;
 }
+.photo {
+    float: left;
+    margin: 0 0 10px 10px;
+    border: 1px solid #3388CC;
+    border-radius: 8px;
+}
 .section {
     padding: 10px;
     border: 1px solid #23a0da;
@@ -37,8 +43,7 @@ body
 }
 .section-content {
     width: 70%;
-    clear: both;
-    
+    clear: both;   
 }
 .block {
     margin-bottom: 10px;
