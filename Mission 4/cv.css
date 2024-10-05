@@ -15,8 +15,8 @@ body
 .block1 {
     background-color:coral;
     float: right;
-    height: 150px;
-    width: 95%;
+    height: 151px;
+    width: 97%;
     margin: 10px;
     border-radius: 8px;
     text-align: center;
@@ -34,6 +34,7 @@ body
 }
 .header {
     text-align: center;
+    position: relative;
 }
 .section {
     padding: 10px;
