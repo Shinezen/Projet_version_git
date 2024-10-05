@@ -25,12 +25,6 @@ body
 .header {
     text-align: center;
 }
-.photo {
-    float: left;
-    margin-top:10px;
-    border: 1px solid #3388CC;
-    border-radius: 8px;
-}
 .section {
     padding: 10px;
     border: 1px solid #23a0da;
