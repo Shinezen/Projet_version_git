@@ -1,0 +1,23 @@
+body {
+   background-color:cadetblue;
+}
+
+button {
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    background-color:gainsboro;
+    border: 2px solid goldenrod;
+    font-size: 2em;
+    color:cornsilk;
+    margin: 30px;
+    transition: 0.2s;
+}
+
+button:hover{
+    
+    color:gainsboro;
+    background-color: goldenrod;
+    border: 2px solid gainsboro;
+    transition: 150ms;
+}
