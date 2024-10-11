@@ -98,16 +98,10 @@ nav > ul > li > a:hover {
 @media (max-width: 680px) {
     nav > ul {
         display: none;
-        background-color: #333; 
+        background-color: #333;
+        flex-direction: column; 
         width: 100%; 
     }
-
-    nav > ul > li {
-        display: block;
-        width: 100%;
-    }
-
-   
     .menu-label {
         display: inline-block;
         color: white;
@@ -140,12 +134,7 @@ nav > ul > li > a:hover {
     input[type="checkbox"]:checked + .menu-label + nav > ul {
         display: block;
     }
-    nav ul ul {
-        display: none;
-    }
-    input[type="checkbox"]:checked + .menu-label + nav > ul > li:hover > ul {
-        display: block;
-    }
+
 }
 
 nav > ul > li {
