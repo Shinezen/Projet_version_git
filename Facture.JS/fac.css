@@ -1,0 +1,45 @@
+body {
+    background-color:burlywood;
+}
+ 
+input.titre {
+     border-radius: 10px;
+     width: 250px;
+     height: 10px;
+     background-color:gainsboro;
+     border: 2px solid goldenrod;
+     font-family: verdana;
+     color:mediumturquoise;
+     margin: 5px;
+     text-align: center;
+     font-size: 2em;
+     padding: 10px;
+}
+
+input.art {
+    border-radius: 10px;
+    width: 250px;
+    height: 10px;
+    background-color:gainsboro;
+    border: 2px solid goldenrod;
+    font-family: verdana;
+    color:mediumaquamarine;
+    margin: 5px;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+}
+
+button {
+     border-radius: 10px;
+     width: 250px;
+     height: 10px;
+     background-color:gainsboro;
+     border: 2px solid goldenrod;
+     font-family: verdana;
+     color:mediumturquoise;
+     margin: 5px;
+     text-align: center;
+     font-size: 2em;
+     padding: 10px;
+}
