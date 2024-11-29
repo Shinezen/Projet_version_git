@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu Pierre-Papier-Ciseaux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f3f4f6;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #e0f7fa;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jeu Pierre-Papier-Ciseaux</h1>
+  <p>Choisissez une option pour jouer contre l'ordinateur :</p>
+  
+  <!-- Boutons pour choisir Pierre, Papier ou Ciseaux -->
+  <button onclick="playGame('Pierre')">Pierre</button>
+  <button onclick="playGame('Papier')">Papier</button>
+  <button onclick="playGame('Ciseaux')">Ciseaux</button>
+
+  <!-- Zone pour afficher le résultat -->
+  <div id="result"></div>
+
+<script>
+// Fonction pour jouer à Pierre-Papier-Ciseaux
+function playGame(playerChoice) {
+  // Les choix possibles
+  const choices = ["Pierre", "Papier", "Ciseaux"];
+  
+  // Choix aléatoire de l'ordinateur
+  const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+  // Déterminer le résultat
+  let result;
+  if (playerChoice === computerChoice) {
+    result = "Égalité ! Vous avez tous les deux choisi " + playerChoice + ".";
+  } else if (
+    (playerChoice === "Pierre" && computerChoice === "Ciseaux") ||
+    (playerChoice === "Papier" && computerChoice === "Pierre") ||
+    (playerChoice === "Ciseaux" && computerChoice === "Papier")
+  ) {
+    result = "Bravo ! Vous avez gagné ! " + playerChoice + " bat " + computerChoice + ".";
+  } else {
+    result = "Dommage, vous avez perdu. " + computerChoice + " bat " + playerChoice + ".";
+  }
+
+  // Afficher le résultat dans le div #result
+  document.getElementById("result").textContent = result;
+}
+</script>
+
+</body>
+</html>

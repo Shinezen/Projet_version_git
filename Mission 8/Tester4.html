@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compteur de Voyelles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f3f4f6;
+    }
+    h1 {
+      color: #333;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #e0f7fa;
+      color: #00796b;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: calc(100% - 22px);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Compteur de Voyelles</h1>
+  <p>Entrez une phrase pour compter le nombre de voyelles :</p>
+  <!-- Zone de saisie de l'utilisateur -->
+  <input type="text" id="userInput" placeholder="Entrez votre phrase ici" />
+
+  <!-- Bouton pour lancer le comptage -->
+  <button onclick="countVowels()">Compter les Voyelles</button>
+
+  <!-- Section pour afficher le résultat -->
+  <div id="result"></div>
+
+<script>
+// Fonction pour compter les voyelles dans une phrase
+function countVowels() {
+  // Récupérer la saisie de l'utilisateur
+  const input = document.getElementById("userInput").value;
+
+  // Définir les voyelles
+  const vowels = "aeiouAEIOU";
+
+  // Initialiser un compteur pour les voyelles
+  let count = 0;
+
+  // Parcourir chaque caractère de la saisie utilisateur
+  for (let char of input) {
+    // Vérifier si le caractère est une voyelle
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  // Afficher le résultat à l'utilisateur
+  const resultDiv = document.getElementById("result");
+  if (count > 0) {
+    // Si des voyelles ont été trouvées
+    resultDiv.textContent = `Il y a ${count} voyelle(s) dans cette phrase.`;
+  } else {
+    // Si aucune voyelle n'a été trouvée
+    resultDiv.textContent = "Aucune voyelle trouvée dans la phrase.";
+  }
+}
+</script>  
+</body>
+</html>

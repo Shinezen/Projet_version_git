@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devinette Magique</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Devinette Magique</h1>
+  <p>Devinez le nombre magique (entre 1 et 100) :</p>
+  <!-- Champ pour entrer la réponse -->
+  <input type="number" id="guess" placeholder="Votre nombre" />
+  <!-- Bouton pour vérifier la réponse -->
+  <button onclick="checkGuess()">Deviner</button>
+  
+  <!-- Zone où le résultat est affiché -->
+  <div id="result"></div>
+
+<script>
+// Génère un nombre aléatoire entre 1 et 100
+const magicNumber = Math.floor(Math.random() * 100) + 1;
+
+// Fonction appelée lorsqu'on clique sur le bouton "Deviner"
+function checkGuess() {
+  // Récupère la valeur saisie par l'utilisateur
+  const userGuess = Number(document.getElementById("guess").value);
+  
+  // Élément HTML pour afficher le résultat
+  const resultDiv = document.getElementById("result");
+
+  // Vérifie si la réponse est correcte, trop haute ou trop basse
+  if (userGuess === magicNumber) {
+    resultDiv.innerHTML = "🎉 Bravo ! Vous avez trouvé le nombre magique : " + magicNumber;
+    resultDiv.style.color = "green"; // Change la couleur du texte pour indiquer le succès
+  } else if (userGuess > magicNumber) {
+    resultDiv.innerHTML = "Trop haut ! Essayez encore. 🔺";
+    resultDiv.style.color = "orange";
+  } else {
+    resultDiv.innerHTML = "Trop bas ! Essayez encore. 🔻";
+    resultDiv.style.color = "blue";
+  }
+}
+</script>
+</body>
+</html>

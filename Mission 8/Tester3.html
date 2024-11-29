@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tester l'exercice : Trouver le plus grand</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    textarea {
+      width: 80%;
+      height: 150px;
+      font-family: monospace;
+      font-size: 16px;
+    }
+    button {
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>Tester l'exercice : Trouver le plus grand entre deux nombres</h1>
+  <p>Écrivez une fonction qui retourne le plus grand entre deux nombres donnés.</p>
+
+<!-- Champs de saisie pour les deux nombres -->
+  <input type="number" id="number1" placeholder="Entrez un nombre" />
+  <input type="number" id="number2" placeholder="Entrez un autre nombre" />
+
+ <!-- Bouton pour déclencher la fonction -->
+ <button onclick="min()">Trouver le plus petit</button>
+
+ <!-- Zone d'affichage du résultat -->
+ <div class="result" id="result">
+
+</div>
+
+  <script>
+    // Fonction pour trouver le plus petit nombre entre deux valeurs
+    function min() {
+      
+    // Récupérer les valeurs des champs
+    const num1 = parseFloat(document.getElementById('number1').value);
+    const num2 = parseFloat(document.getElementById('number2').value);
+
+    // Vérifier si les entrées sont valides (nombres)
+    if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById('result').innerHTML = 'Veuillez entrer deux nombres valides.';
+    } else {
+    // Comparer les deux nombres pour trouver le plus petit
+        if (num1 < num2) {
+            document.getElementById('result').innerHTML = `Le plus petit nombre est : ${num1}`;
+        } else if (num2 < num1) {
+            document.getElementById('result').innerHTML = `Le plus petit nombre est : ${num2}`;
+        } else {
+            document.getElementById('result').innerHTML = 'Les deux nombres sont égaux.';
+        }
+    }
+}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changer la Couleur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f3f4f6; /* Couleur initiale de fond */
+      margin: 20px;
+      transition: background-color 0.5s ease; /* Animation douce pour le changement de couleur */
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercice : Change la Couleur de la Page</h1>
+  <p>Appuyez sur le bouton pour changer la couleur d'arrière-plan :</p>
+
+  <!-- Bouton pour changer la couleur -->
+  <button onclick="changeColor()">Changer la Couleur</button>
+
+<script>
+// Tableau contenant différentes couleurs
+const colors = ["#ff9999", "#99ff99", "#9999ff", "#ffff99", "#ffccff", "#ccffff", "#ffcc99", "#cc99ff"];
+
+// Fonction pour changer la couleur d'arrière-plan
+function changeColor() {
+  // Choisir une couleur aléatoire du tableau
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  
+  // Appliquer la couleur à l'arrière-plan de la page
+  document.body.style.backgroundColor = randomColor;
+}
+</script>
+</body>
+</html>

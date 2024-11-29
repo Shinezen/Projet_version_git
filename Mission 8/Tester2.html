@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tester l'exercice : Vérifier un nombre entre 1 et 10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+    button {
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tester l'exercice : Vérifier un nombre entre 1 et 10</h1>
+  <p>Entrez un nombre pour vérifier s'il est entre 1 et 10.</p>
+
+  <input type="number" id="inputNumber" placeholder="Entrez un nombre" />
+  <br>
+  <button onclick="testerNombre()">Vérifier</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    function testerNombre() {
+      const nombre = parseInt(document.getElementById("inputNumber").value);
+      const resultDiv = document.getElementById("result");
+
+      if (isNaN(nombre)) {
+        resultDiv.textContent = "Veuillez entrer un nombre valide.";
+        resultDiv.style.color = "red";
+      } else if (nombre > 10) {
+        resultDiv.textContent = "ERROR ! Ressayez !!";
+        resultDiv.style.color = "red";
+      } else if (nombre >= 1 && nombre <= 10) {
+        resultDiv.textContent = `Bravo, bien joué ! Le nombre ${nombre} est bien entre 1 et 10.`;
+        resultDiv.style.color = "green";
+      } else {
+        resultDiv.textContent = "Le nombre est inférieur à 1. Ressayez !";
+        resultDiv.style.color = "orange";
+      }
+    }
+  </script>
+
+</body>
+</html>

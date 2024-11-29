@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compteur de Clics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #counter {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Compteur de Clics</h1>
+  <p>Cliquez sur le bouton pour incrémenter le compteur :</p>
+
+  <!-- Bouton pour incrémenter le compteur -->
+  <button onclick="incrementCounter()">Cliquez ici</button>
+
+  <!-- Zone où le compteur est affiché -->
+  <div id="counter">0</div>
+
+  <!-- Bouton pour voir la solution -->
+  <button onclick="exerciseCounter()">Voir la solution</button>
+
+<script>
+// Initialise le compteur à 0
+let counter = 0;
+
+// Fonction pour incrémenter le compteur à chaque clic
+function incrementCounter() {
+  counter++; // Augmente le compteur
+  // Met à jour l'affichage du compteur dans la page
+  document.getElementById("counter").innerText = counter;
+}
+</script>
+
+
+</body>
+</html>

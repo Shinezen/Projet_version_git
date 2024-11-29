@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Styles de base pour la page */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      /* Styles pour les champs de saisie et le bouton */
+      input, button {
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+      }
+      /* Style du bouton avec une couleur orange */
+      button {
+        background-color: orange;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      /* Couleur plus foncée au survol du bouton */
+      button:hover {
+        background-color: darkorange;
+      }
+      /* Couleur plus foncée au survol du bouton */
+      .result {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <h1>Exercice 1</h1>
+    <p>Entrez deux nombres pour calculer leur somme :</p>
+    
+    <!-- Champs de saisie pour les deux nombres -->
+    <input type="number" id="num1" placeholder="Premier nombre">
+    <input type="number" id="num2" placeholder="Deuxième nombre">
+    <br>
+     
+    <!-- Bouton qui déclenche la fonction de calcul -->
+    <button onclick="calculerSomme()">Calculer</button>
+  
+    <!-- Zone où sera affiché le résultat -->
+    <div class="result" id="result"></div>
+  
+    <script>
+        /**
+     * Fonction pour calculer la somme de deux nombres
+     */
+      function calculerSomme() {
+        // Récupérer les valeurs des champs
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+  
+        // Vérification des entrées
+        if (isNaN(num1) || isNaN(num2)) {
+          document.getElementById('result').textContent = "Veuillez entrer des nombres valides.";
+          return;
+        }
+  
+        // Calcul de la somme
+        const somme = num1 + num2;
+  
+        // Affichage du résultat
+        document.getElementById('result').textContent = `La somme de ${num1} et ${num2} est : ${somme}`;
+      }
+    </script>
+</body>
+</html>
