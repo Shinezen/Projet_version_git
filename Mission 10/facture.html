@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" href="style9.css">
+    <script src="facture.js"></script>
+</head>
+<body>
+    <div class="facture-container">
+        <div class="header">
+            <div class="company-name">
+                Shinelight<br>
+                <small>Adresse postale</small>
+            </div>
+            <div class="date-facture">
+                FACTURE<br>
+                <small>13/12/2024</small>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="destinataire">
+                <strong>Destinataire</strong><br>
+                Nom<br>
+                Nom de la société<br>
+                Adresse postale<br>
+                Téléphone<br>
+                Email
+            </div>
+            <div class="envoyez-a">
+                <strong>Envoyez à</strong><br>
+                Nom<br>
+                Nom de la société<br>
+                Adresse postale<br>
+                Téléphone<br>
+                Email
+            </div>
+        </div>
+    </div>
+
+    <div class="facture-container">
+        <div class="header">FACTURE
+    </div>
+    <table>
+
+        <thead>
+            <tr>
+                <th>DESCRIPTION</th>
+                <th>QUANTITÉ</th>
+                <th>PRIX UNITAIRE</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+            
+        <tbody id="facture-body">
+            <tr class="row" id='modeleLigne'>
+                <td><input type="text" name="desc" class="input desc" value="Article"></td>
+                <td><input type="number" name="qte" class="input qte" value="1"></td>
+                <td><input type="number" name="prix" class="input prix" value="0"></td>
+                <td><input type="number" name="total" class="input total" readonly></td>
+            </tr>
+    </table>
+            
+        <div class="sommaire">
+            <div>Sous-total : <span id="sousTotal">0</span> €</div>
+            <div>Remise : <input type="number" id="remise" value="0"> %</div>
+            <div>Après remise : <input type="number" id="sousTotalRemise" value="0"></div>
+            <div>Taxe : <input type="number" id="taxe" value="10"> %</div>
+            <p class="total-final">Total final : <span id="totalFinal"> 0</span></div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="annuler()">Annuler</button>
+            <button onclick="calculer()">Calculer</button>
+            <button onclick="remplir_auto()">Remplir automatiquement</button>
+        </div>
+    </div>
+</div>
+</body>
+    
+    <footer>
+        <p>&copy; ShineZen</p>
+    </footer>     
+</body>
+</html>
