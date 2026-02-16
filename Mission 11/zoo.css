@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3rem; /* Taille du texte du titre */
+    color: #5c9e8e; /* Couleur blanche pour le contraste avec le fond */
+    margin-bottom: 20px; /* Espace entre le titre et le formulaire */
+}
+
+
+/* Fond de la page avec une image de bibliothèque */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('zoo.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: left ; /* Place l'image vers la droite */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    color: #5c9e8e; /* Change la couleur du texte pour contraster avec l'image */
+}
+
+/* Conteneur du formulaire centré */
+div {
+    background-color: rgba(225, 221, 221, 0.9); /* Fond semi-transparent pour une meilleure lisibilité */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(243, 239, 239, 0.911);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre du formulaire */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Style des champs du formulaire */
+input[type="text"], 
+input[type="password"], 
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Ajout d'un effet au focus des champs */
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #5c9e8e;
+    outline: none;
+}
+
+/* Style pour les boutons */
+input[type="submit"] {
+    background-color: #5c9e8e;
+    color: white ;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b7a69;
+}
+
+/* Espacement entre les boutons */
+input[type="submit"]:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* Alignement du formulaire et mise en page responsive */
+form {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulaire d'Inscription</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+    
+             <label for="prenom">Prénom :</label>
+             <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+    
+             <label for="nom">Nom :</label>
+             <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+            
+             <label for="email">Email :</label>
+             <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+            
+             <label for="password">Mot de passe :</label>
+             <input type="password" id="password" name="password" placeholder="Entrez un mot de passe" required>
+             <label for="confirm_password">Confirmez le mot de passe :</label>
+             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmez votre mot de passe" required>
+            
+             <label for="date_naissance">Date de naissance :</label>
+             <input type="date" id="date_naissance" name="date_naissance" required>
+            
+             <label for="genre">Genre :</label>
+             <select id="genre" name="genre" required>
+                <option value="">--Sélectionnez--</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+             </select>
+            
+             <label for="pays">Pays</label>
+             <select id="pays" name="pays" required>
+                 <option value="espagne">Espagne</option>
+                 <option value="france">France</option>
+                 <option value="allemagne">Allemagne</option>
+                 <option value="autre">Autre</option>
+             </select><br><br>
+    
+             <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville" placeholder="Entrez votre ville" required><br><br>
+    
+            <label for="code_postale">Code Postale</label>
+            <input type="text" id="code_postale" name="code_postale" placeholder="Entrez votre code postale" required><br><br>
+    
+             
+             
+             <button type="submit">S'inscrire</button>
+        
+        </form>
+    
+        </div>
+</body>
+</html>

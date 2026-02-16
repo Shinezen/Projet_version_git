@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <header>
+    <h1>Shine Kalenga</h1>
+    <p>Étudiant · Technicien Support · Créateur </p>
+
+    <a href="travaux_index.html" class="button">Mes Travaux</a>
+    <a href="ilovepdf_merged.pdf" class="button">Certificats</a>
+    <a href="veille1.html" class="button">Veille Techno</a>
+  </header>
+
+<section class="intro">
+    <center><h1>Bienvenue sur mon Portofolio en ligne!!</h1></center>
+    <strong><center><p>
+      Sur mon portofolio, je partage ici mes missions, certificats obtenus, TPs et projets réalisés au fil de mes 2 ans de BTS.
+    </p></center></strong>
+</section>
+
+<section class="intro">
+<center><a href="#" id="openModal" class="button">A propos de moi..</a></center>
+
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <span class="close-button" id="closeModal">&times;</span>
+
+    <div class="modal-flex"> 
+     <div class="image-container">
+      <img src="perso.png"  width="205" heigth="200">
+     </div>
+
+     <div class="text-container">
+        <h3>Profil de l'Etudiant</h3>
+        <p>
+          Volonté d'apprendre de l'informatique dans mon parcours académique, mais en parallèle j'aime la lecture sur de la fiction et dévellopement personel. Ecrire aussi est devenu ma passion, pour créer des récits qui transmettent des idées et émotions. 
+          Dans mon travail, je combine naturellement rigueur technique et créativité pour apporter une valeur technique à mes projets.
+        </p>
+        <a href="shine_CV.pdf" class="button">Résume (CV)</a>
+     </div>
+    </div>
+</div>
+
+
+<style>
+.image-container img {
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+/* Le texte à droite */
+.text-container {
+  flex: 1;
+  color:black;
+}
+</style>
+
+    <script src="portfolio.js"></script>
+</div>
+
+<section>
+    <h2>Compétences</h2>
+
+  <div class="formation">
+    <h4>Système et Réseau</h4> 
+    <div class="skills">
+        <span>Routage</span>
+        <span>Docker(création de VM)</span>
+        <span>GLPI</span>
+        <span>Gestion du système OS: Windows 11 et LINUX</span>
+    </div>
+  </div>
+
+  <div class="formation">
+    <h4>Développement</h4>
+    <div class="skills">
+        <span>Python</span>
+        <span>Exploitation des données. SQL</span>
+        <span>PHP, HTML,CSS et JAVASCRIPT</span>
+    </div>
+  </div>
+  
+ <a href="grille_stage.xlsx">
+  <div class="button"> 
+   <h4>Grille des compétences (stage)</h4>
+  </div>  
+ </a>
+
+ </section>
+</section>
+
+<section>
+    <h2>Projets</h2>
+    
+    <a href="schémastationf.png">
+    <div class="button">
+        <h3>Projet StationF (Schéma logique)</h3>
+        <p>Ce projet consistez à concevoir, restructurer et sécuriser l'infrastructure réseau du campus Station F, incluant son extension à Marseille.</p>
+    </div>
+    </a>
+    
+    <a href="https://eldelmira.github.io/mus-e-/index.html">
+    <div class="button">
+        <h3>Projet Infra Musée du Louvre</h3>
+        <p>Le projet consistez de proposer des solutions pour mieux sécuriser le Louvre.</p>
+    </div>
+    </a>
+</section>
+
+<section>
+    <h2>Formation</h2>
+
+    <div class="formation">
+        <h3>BTS SERVICES INFORMATIQUES AUX ORGANISATIONS</h3>
+        <h5>Lycée Parc de Vilgénis (Massy)</h5>
+        <p>Sept 2024- Présent</p>
+    </div>
+
+    <div class="formation">
+        <h3>BTS BANQUE 1ÈRE ANNÉE</h3>
+        <h5>Lycée Polyvalent de Cachan (Cachan)</h5>
+        <p>Sept 2023- Mai 2024</p>
+    </div>
+    
+    <div class="formation">
+        <h3>BACCALAURÉAT STMG option SIG</h3>
+        <h5>Lycée Polyvalent de Cachan (Cachan)</h5>
+        <p>Sept 2022- Juin 2023</p>
+    </div>
+
+</section>
+
+<section>
+    <details class="drop">
+    <summary><h2>Expérience</h2></summary>
+  <div class="panel">
+    <div class="formation">
+        <h3>Technicien Support Niv1/2</h3>
+        <p> 2 JUIN-4 JUIL <strong>&</strong> 17 NOV-19 DEC 2025</p>
+        <h5>Conseil Départementale du Val de Marne à Créteil</h5>
+       <ul> 
+        <li>Support téléphonique & messagerie</li>
+        <li>Intervention support de proximité</li>
+        <li>Fiabilisation des informations utilisateurs dans le SI</li>
+       <a href="https://www.valdemarne.fr/le-conseil-departemental/le-conseil-departemental/a-quoi-sert-le-departement"> <img src="valdemarne.jpeg" class="logo" alt="logo"></a>
+       <a href="Rapport de stage.docx.pdf">
+     <div class="button"> 
+      <h4>Rapport de stage</h4>
+     </div>  
+      </a>
+    </div>
+    <div class="formation">
+        <h3>Emploi Etudiant</h3>
+        <p> 4 au 22 Août 2025</p>
+        <h5>L'Oréal de Chevilly Larue</h5>
+       <ul> 
+        <li>Gestion de la chaîne logistique</li>
+        <li>Développement organisationnel</li>
+       </ul>
+       <a href="https://www.lorealevaluationproduits.com/nos-centres/chevilly-larue.html"> <img src="oreal.png" class="logo" alt="logo" > </a>
+    </div>
+    <div class="formation">
+        <h3>Chargé d'accueil</h3>
+        <p>Février-Juillet 2024</p>
+        <h5>BRED Banque Populaire de Paris 20ème</h5>
+       <ul> 
+        <li>Compilation d’informations et rédaction de rapports sur POST VISION.</li>
+        <li>Remise des chèques, cartes et courrier</li>
+        <li>Soutien proactif aux tâches administratives des équipes.</li>
+       </ul>
+      <a href="https://www.bred.fr/trouver-agence"> <img src="bred-logo.jpeg" class="logo" alt="logo" > </a>
+    </div>
+</section>
+
+<section>
+    <details class="drop">
+    <summary><h2>Langues</h2></summary>
+  <div class="panel">
+    <div class="formation">
+        <h3>Anglais</h3>
+        <p>Langue Maternelle</p>
+    </div>
+    <div class="formation">
+        <h3>Espagnol</h3>
+        <p>Intermédiaire</p>
+    </div>
+    <div class="formation">
+        <h3>Français</h3>
+        <p>Courant</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:xoxox@gmaol.com">🔗noggin.xtreme@gmail.com</a></p>
+    <p>GitHub : <a href="https://github.com/Shinezen">🔗ShineZen</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/shine-kalenga-88b5aa293">🔗shine-kalenga</a></p>
+</section>
+
+<footer>
+    <strong><p>&copy; ShineZen</p></strong>
+</footer>
+
+</body>
+</html>
+

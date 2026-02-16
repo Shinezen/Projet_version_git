@@ -1,0 +1,193 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background-color: #f4f5f7;
+}
+
+/* Navigation */
+header {
+    background: linear-gradient(135deg, #589c9f, #4bc573);
+    color: #f9fafb;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 18px;
+  background: white;
+  color: #474a48;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+}
+
+summary {
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+h2 {
+     border-bottom: 2px solid #1e1e1e;
+     padding-bottom: 10px;
+}
+
+details {
+  margin-top: 12px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+details[open] .panel {
+  opacity: 2;
+  max-height: 2000px;
+}
+
+.panel {
+  padding: 12px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: .40s ease;
+}
+
+/* Hero */
+.hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: #d1d5db;
+}
+
+
+/* Sections */
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.section-alt {
+    background-color: whitesmoke;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.section p {
+    margin-bottom: 0.7rem;
+}
+
+
+/* Cartes tendances */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #1f2937;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* Listes */
+.list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.list li {
+    margin-bottom: 0.4rem;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
